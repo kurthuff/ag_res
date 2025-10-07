@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environment
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# macOS
+.DS_Store
+
+# Data and outputs
+data/raw/
+data/interim/
+data/processed/
+outputs/
+*.log
+
+# Environment and build
+.env
+*.egg-info/
+build/
+dist/
