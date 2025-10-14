@@ -1,0 +1,125 @@
+Crop,Label
+PINTO BEANS,Beans
+BLACK BEANS,Beans
+WHITE PEA BEANS,Peas
+KIDNEY BEANS,Beans
+OTH DRY EDIBLE BEANS,Beans
+SMALL RED BEANS,Beans
+ADZUKI BEANS,Beans
+CRANBERRY BEANS,Beans
+FABABEANS,Fababeans
+FIELD PEAS,Peas
+ORGANIC FIELD PEAS,Peas
+LENTILS,Lentils
+SOYBEANS,Soybeans
+COARSE HAY,Pasture/forages
+GREENFEED,Pasture/forages
+GRASSES,Pasture/forages
+INTERCROP MIXTURE,Pasture/forages
+FORAGE ESTABLISHMENT,Pasture/forages
+PASTURE (TAME/PERENNIAL),Pasture/forages
+PASTURE (TAME/ANNUAL),Pasture/forages
+ALFALFA,Pasture/forages
+ALFALFA/GRASS MIX.,Pasture/forages
+SWEET CLOVER,Pasture/forages
+ALSIKE CLOVER (FORAGE),Pasture/forages
+RED CLOVER (FORAGE),Pasture/forages
+CLOVER RD CNRYG & TIM HAY,Pasture/forages
+CLOVER & BROMEGRASS HAY,Pasture/forages
+BIRDSFOOT TREFOIL FORAGE,Pasture/forages
+PER. RYEGRASS SEED,Other crops
+ANNUAL RYEGRASS SEED,Other crops
+TIMOTHY SEED COMMON,Other crops
+PED. TIMOTHY SEED,Other crops
+COMMON ALFALFA SEED,Other crops
+PED. ALFALFA SEED,Other crops
+SWEET CLOVER (SEED),Other crops
+ALSIKE CLOVER (SEED),Other crops
+RED CLOVER (SEED),Other crops
+BIRDSFOOT TREFOIL (SEED),Other crops
+GRASSES (SEED),Other crops
+TALL FESCUE SEED,Other crops
+HAIRY VETCH,Vetch
+CICER MILKVETCH (FORAGE),Vetch
+LUPINS (FORAGE),Other pulses
+LUPINS (SEED),Other pulses
+GRASSES (SOD),Sod
+PHACELIA,Herbs
+SAINFOIN (FORAGE),Other crops
+BARLEY,Barley
+ORGANIC BARLEY,Barley
+OATS,Oats
+ORGANIC OATS,Oats
+ORGANIC R.S. WHEAT,Spring wheat
+ORGANIC SPR WHT OTHR,Spring wheat
+RED SPRING WHEAT,Spring wheat
+NORTH. HARD RED WHT,Spring wheat
+PRAIRIE SPRING WHEAT,Spring wheat
+OTHER SPRING WHEAT,Spring wheat
+EXTRA STRONG WHEAT,Wheat
+HARD WHITE WHEAT,Wheat
+DURUM WHEAT,Wheat
+WINTER WHEAT,Winter wheat
+ORGANIC WINTER WHEAT,Winter wheat
+OPEN POLL. FALL RYE,Rye
+HYBRID FALL RYE,Rye
+ORGANIC FALL RYE,Rye
+ORGANIC O P FALL RYE,Rye
+MILLET (FOXTAIL SEED),Millet
+PROSO MILLET,Millet
+MILO/GRAIN SORGHUM,Sorghum
+TRITICALE,Triticale
+WINTER TRITICALE,Triticale
+SPELT,Spelt
+EMMER WHEAT,Wheat
+BUCKWHEAT,Buckwheat
+CANARYSEED,Canaryseed
+MIXED GRAIN,Other grains
+GRAIN CORN,Corn
+SILAGE CORN,Corn
+OPEN POL SILAGE CORN,Corn
+NON-CORN SILAGE,Corn
+OPEN POLLINATED CORN,Corn
+SWEET CORN,Corn
+ARGENTINE CANOLA,Canola/rapeseed
+POLISH CANOLA,Canola/rapeseed
+RAPESEED,Canola/rapeseed
+OIL SUNFLOWERS,Sunflower
+NON-OIL SUNFLOWERS,Sunflower
+FLAX,Flaxseed
+ORGANIC FLAX,Flaxseed
+MUSTARD,Mustard
+HEMP GRAIN,Hemp
+ORGANIC HEMP GRAIN,Hemp
+PROC POTATOES-IRRIG,Potatoes
+PROC POTATOES-DRYLND,Potatoes
+TABLE POTATOES,Potatoes
+CARROTS,Other vegetables
+PARSNIPS,Other vegetables
+CUCUMBERS,Other vegetables
+CABBAGE,Other vegetables
+CAULIFLOWER,Other vegetables
+RED BEET,Other vegetables
+ASPARAGUS,Other vegetables
+SWEET POTATO,Other vegetables
+CARAWAY,Herbs
+QUINOA,Quinoa
+ALFALFA EST OPTION,Pasture/forages
+ALFALFA GRASS EST OP,Pasture/forages
+ALFALFA SEED EST OPT,Other crops
+BUSH/YARD/SLOUGH,Exposed land/barren
+COOKING ONIONS,Other vegetables
+FALL GRASS EST OPTN,Pasture/forages
+FALL TIMOTHY EST OPT,Pasture/forages
+ORGANIC DURUM WHEAT,Wheat
+ORGANIC E.S. WHEAT,Wheat
+ORGANIC H.W. WHEAT,Wheat
+ORGANIC N.H.R. WHT,Spring wheat
+ORGANIC P.S. WHEAT,Spring wheat
+RUTABAGAS,Other vegetables
+SPRING GRASS EST OPT,Pasture/forages
+SPRING TIMOTHY EST O,Pasture/forages
+SUGAR BEETS,Sugarbeets
+SWEET CLOVER EST OPT,Pasture/forages
+TOO WET TO SEED,Too wet to be seeded
+UNUSED LAND,Exposed land/barren

@@ -12,7 +12,7 @@ from ag_res import paths
 # calamine neccessary to properly load .xlsx from MASC website
 def load_data(year: int):
     raw_path = paths.raw(year) / f"masc_{year}.xlsx"
-    summary_path = paths.raw(year).parent / "masc_summary.csv"
+    summary_path = paths.reference() / "masc_summary.csv"
     masc_df = pd.read_excel(raw_path, engine="calamine")
     summary_df = pd.read_csv(summary_path)
     return masc_df, summary_df
@@ -224,6 +224,9 @@ def impute(missing_df, valid_df, acres_diff, yield_diff):
     missing_df["crop"] = missing_df["crop"].str.strip().str.upper()
     valid_df["crop"] = valid_df["crop"].str.strip().str.upper()
 
+    # store original crop names before replacement
+    missing_df["original_crop"] = missing_df["crop"]
+
     unmatched_crops = set(missing_df["crop"].unique()) - set(valid_df["crop"].unique())
     missing_df.loc[missing_df["crop"].isin(unmatched_crops), "crop"] = (
         missing_df.loc[missing_df["crop"].isin(unmatched_crops), "crop"].replace(proxy_map)
@@ -286,6 +289,10 @@ def impute(missing_df, valid_df, acres_diff, yield_diff):
         "imputed_yield_tonnes",
     ]
     missing_df = missing_df.drop(columns=cols_to_drop)
+
+    # restore original crop names before combining
+    missing_df["crop"] = missing_df["original_crop"]
+    missing_df = missing_df.drop(columns=["original_crop"])
 
     recombined_df = pd.concat([valid_df, missing_df], ignore_index=True)
     return recombined_df
