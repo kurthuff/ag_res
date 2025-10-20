@@ -41,5 +41,5 @@ output_tif = paths.rasters(args.year) / f"biomass_code_and_tonnes_{args.year}.ti
 Use the setup script to create yearly subfolders under data and outputs.
 
 ```bash
-python scripts/setup_year_folders.py --year 2025
+python scripts/setup_year_folders.py --year 2024
 ```
