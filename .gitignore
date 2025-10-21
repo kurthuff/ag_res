@@ -22,7 +22,10 @@ __pycache__/
 data/raw/
 data/interim/
 data/processed/
-outputs/
+outputs/mapping/
+outputs/rasters/
+outputs/visuals/
+outputs/reports/reallocation/
 *.log
 
 # Environment and build
