@@ -22,3 +22,6 @@ def mapping(year: int) -> Path:
 
 def logs() -> Path:
     return project_root / "logs"
+
+def reports() -> Path:
+    return project_root / "outputs" /  "reports"

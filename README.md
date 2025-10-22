@@ -50,8 +50,8 @@ python scripts/setup_year_folders.py --year 2024
 https://www.masc.mb.ca/masc.nsf/mmpp_browser_variety.html
 
 Annual yield and area by municipality/RM and crop (since 1994).  
-Use on-page *Search Summary* for complete acres; `.xlsx` omits small cells.  
-Scraper: `scripts/masc_scrape.py`.
+Use on-page *Search Summary* for complete acres; `.xlsx` omits crop varieties
+that are used in less than 500 acres or 3 farms. This is the cause of needing imputation, with *Search Summary* used to align hidden-valued instances.
 
 ### AAFC Annual Crop Inventory (ACI)
 https://agriculture.canada.ca/atlas/data_donnees/annualCropInventory/data_donnees/tif/

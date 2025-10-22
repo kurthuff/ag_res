@@ -26,6 +26,8 @@ outputs/mapping/
 outputs/rasters/
 outputs/visuals/
 outputs/reports/reallocation/
+outputs/reports/muni_rm_pct_summaries/
+outputs/reports/aci_masc_merge/
 *.log
 
 # Environment and build
