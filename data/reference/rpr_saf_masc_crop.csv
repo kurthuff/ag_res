@@ -1,0 +1,129 @@
+Crop,RPR,SAF,Explanation,Reference,Last_updated
+ADZUKI BEANS,0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+ALFALFA,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+ALFALFA EST OPTION,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+ALFALFA GRASS EST OP,0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+ALFALFA GRASS EST OP,0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+ALFALFA SEED EST OPT,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+ALFALFA SEED EST OPT,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+ALFALFA/GRASS MIX.,0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+ALSIKE CLOVER (FORAGE),0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+ALSIKE CLOVER (SEED),0,0,Forage/hay yield is already biomass,Conceptual: whole plant used,2025-09-05
+ANNUAL RYEGRASS SEED,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+ARGENTINE CANOLA,1,0.3,Oilseed stems/husks typical,FAO (1983); Lal (2005),2025-09-05
+ASPARAGUS,0.4,0.25,Vegetable aboveground biomass,IEA Bioenergy (2007); Lal (2005),2025-09-05
+BARLEY,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+BIRDSFOOT TREFOIL (SEED),1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+BIRDSFOOT TREFOIL FORAGE,0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+BLACK BEANS,0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+BUCKWHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+BUSH/YARD/SLOUGH,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+CABBAGE,0.4,0.25,Vegetable aboveground biomass,IEA Bioenergy (2007); Lal (2005),2025-09-05
+CANARYSEED,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+CARAWAY,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+CARROTS,0.3,0.25,Root crop tops typical,FAO (1983); IEA Bioenergy (2007),2025-09-05
+CAULIFLOWER,0.4,0.25,Vegetable aboveground biomass,IEA Bioenergy (2007); Lal (2005),2025-09-05
+CICER MILKVETCH (FORAGE),0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+CLOVER & BROMEGRASS HAY,0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+CLOVER RD CNRYG & TIM HAY,0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+COARSE HAY,0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+COMMON ALFALFA SEED,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+COOKING ONIONS,0.3,0.25,Root crop tops typical,FAO (1983); IEA Bioenergy (2007),2025-09-05
+CRANBERRY BEANS,0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+CUCUMBERS,0.4,0.25,Vegetable aboveground biomass,IEA Bioenergy (2007); Lal (2005),2025-09-05
+DURUM WHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+EMMER WHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+EXTRA STRONG WHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+FABABEANS,0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+FALL GRASS EST OPTN,0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+FALL GRASS EST OPTN,0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+FALL TIMOTHY EST OPT,0,0,Forage/hay yield is already biomass,Conceptual: whole plant used,2025-09-05
+FIELD PEAS,0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+FLAX,1,0.3,Oilseed stems/husks typical,FAO (1983); Lal (2005),2025-09-05
+FORAGE ESTABLISHMENT,0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+GRAIN CORN,1.1,0.35,Corn stover typical,FAO (1983); IEA Bioenergy (2007),2025-09-05
+GRASSES,0,0,Forage/hay yield is already biomass,Conceptual: whole plant used,2025-09-05
+GRASSES (SEED),0,0,Forage/hay yield is already biomass,Conceptual: whole plant used,2025-09-05
+GRASSES (SOD),0,0,Forage/hay yield is already biomass,Conceptual: whole plant used,2025-09-05
+GREENFEED,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+HAIRY VETCH,0,0,Forage/hay yield is already biomass,Conceptual: whole plant used,2025-09-05
+HARD WHITE WHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+HEMP GRAIN,1.7,0.35,Hemp straw high biomass,Scarlat et al. (2010); agronomy reports,2025-09-05
+HYBRID FALL RYE,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+INTERCROP MIXTURE,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+KIDNEY BEANS,0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+LENTILS,0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+LUPINS (FORAGE),0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+LUPINS (SEED),0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+MILLET (FOXTAIL SEED),1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+MILO/GRAIN SORGHUM,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+MIXED GRAIN,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+MUSTARD,1,0.3,Oilseed stems/husks typical,FAO (1983); Lal (2005),2025-09-05
+NON-CORN SILAGE,0,0,"Whole plant harvested, no residue",Lal (2005) agronomy practice,2025-09-05
+NON-OIL SUNFLOWERS,1,0.3,Oilseed stems/husks typical,FAO (1983); Lal (2005),2025-09-05
+NORTH. HARD RED WHT,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+OATS,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+OIL SUNFLOWERS,1,0.3,Oilseed stems/husks typical,FAO (1983); Lal (2005),2025-09-05
+OPEN POL SILAGE CORN,0,0,"Whole plant harvested, no residue",Lal (2005) agronomy practice,2025-09-05
+OPEN POLL. FALL RYE,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+OPEN POLLINATED CORN,1.1,0.35,Corn stover typical,FAO (1983); IEA Bioenergy (2007),2025-09-05
+ORGANIC BARLEY,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+ORGANIC DURUM WHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+ORGANIC E.S. WHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+ORGANIC FALL RYE,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+ORGANIC FIELD PEAS,0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+ORGANIC FLAX,1,0.3,Oilseed stems/husks typical,FAO (1983); Lal (2005),2025-09-05
+ORGANIC H.W. WHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+ORGANIC HEMP GRAIN,1.7,0.35,Hemp straw high biomass,Scarlat et al. (2010); agronomy reports,2025-09-05
+ORGANIC N.H.R. WHT,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+ORGANIC OATS,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+ORGANIC P.S. WHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+ORGANIC R.S. WHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+ORGANIC SPR WHT OTHR,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+ORGANIC WINTER WHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+OTH DRY EDIBLE BEANS,0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+OTHER SPRING WHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+PARSNIPS,0.3,0.25,Root crop tops typical,FAO (1983); IEA Bioenergy (2007),2025-09-05
+PASTURE (TAME/ANNUAL),0,0,Forage/hay yield is already biomass,Conceptual: whole plant used,2025-09-05
+PASTURE (TAME/PERENNIAL),0,0,Forage/hay yield is already biomass,Conceptual: whole plant used,2025-09-05
+PED. ALFALFA SEED,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+PED. TIMOTHY SEED,0,0,Forage/hay yield is already biomass,Conceptual: whole plant used,2025-09-05
+PER. RYEGRASS SEED,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+PHACELIA,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+PINTO BEANS,0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+POLISH CANOLA,1,0.3,Oilseed stems/husks typical,FAO (1983); Lal (2005),2025-09-05
+PRAIRIE SPRING WHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+PROC POTATOES-DRYLND,0.3,0.25,Root crop tops typical,FAO (1983); IEA Bioenergy (2007),2025-09-05
+PROC POTATOES-IRRIG,0.3,0.25,Root crop tops typical,FAO (1983); IEA Bioenergy (2007),2025-09-05
+PROSO MILLET,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+QUINOA,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+RAPESEED,1,0.3,Oilseed stems/husks typical,FAO (1983); Lal (2005),2025-09-05
+RED BEET,0.3,0.25,Root crop tops typical,FAO (1983); IEA Bioenergy (2007),2025-09-05
+RED CLOVER (FORAGE),0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+RED CLOVER (SEED),0,0,Forage/hay yield is already biomass,Conceptual: whole plant used,2025-09-05
+RED SPRING WHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+RUTABAGAS,0.3,0.25,Root crop tops typical,FAO (1983); IEA Bioenergy (2007),2025-09-05
+SAINFOIN (FORAGE),0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+SILAGE CORN,0,0,"Whole plant harvested, no residue",Lal (2005) agronomy practice,2025-09-05
+SMALL RED BEANS,0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+SOYBEANS,0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+SPELT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+SPRING GRASS EST OPT,0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+SPRING GRASS EST OPT,0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+SPRING TIMOTHY EST O,0,0,Forage/hay yield is already biomass,Conceptual: whole plant used,2025-09-05
+SPRING TIMOTHY EST O,0,0,Forage/hay yield is already biomass,Conceptual: whole plant used,2025-09-05
+SUGAR BEETS,0.3,0.25,Root crop tops typical,FAO (1983); IEA Bioenergy (2007),2025-09-05
+SWEET CLOVER,0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+SWEET CLOVER (SEED),0,0,Forage/hay yield is already biomass,Conceptual: whole plant used,2025-09-05
+SWEET CLOVER EST OPT,0.3,0.25,"Forage crops leave substantial residue post-harvest (e.g., stubble, trampling, regrowth); values updated based on USDA/FAO estimates and 2008 dry matter residue data.",USDA NASS (2009); Lal (2005); Biomass Harvest Data (2008 Chart),2025-09-05
+SWEET CORN,1.1,0.35,Corn stover typical,FAO (1983); IEA Bioenergy (2007),2025-09-05
+SWEET POTATO,0.3,0.25,Root crop tops typical,FAO (1983); IEA Bioenergy (2007),2025-09-05
+TABLE POTATOES,0.3,0.25,Root crop tops typical,FAO (1983); IEA Bioenergy (2007),2025-09-05
+TALL FESCUE SEED,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+TIMOTHY SEED COMMON,0,0,Forage/hay yield is already biomass,Conceptual: whole plant used,2025-09-05
+TOO WET TO SEED,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+TRITICALE,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+UNUSED LAND,1,0.3,Assigned general default,Wikipedia RPR overview,2025-09-05
+WHITE PEA BEANS,0.7,0.3,Pulse/legume residue typical,FAO (1983); Lal (2005),2025-09-05
+WINTER TRITICALE,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05
+WINTER WHEAT,1.3,0.35,Cereal grain straw typical,FAO (1983) Annex 1; Lal (2005),2025-09-05

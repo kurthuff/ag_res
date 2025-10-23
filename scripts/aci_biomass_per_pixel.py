@@ -3,6 +3,7 @@ import os
 import argparse
 import pandas as pd
 from pathlib import Path
+from datetime import datetime
 
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", "src"))
 from ag_res import paths
@@ -142,6 +143,26 @@ def main():
 
     df_out.to_csv(out_path, index=False)
     print(f"Wrote {out_path}")
+
+   
+    log_path = paths.reports() / "biomass_normalization_log.csv"
+
+    log_row = pd.DataFrame([{
+        "timestamp": datetime.now().isoformat(timespec="seconds"),
+        "year": year,
+        "yield_factor": round(yield_factor, 6),
+        "biomass_factor": round(biomass_factor, 6),
+        "masc_yield_tonnes_total": round(masc_yield_tonnes_total, 2),
+        "masc_biomass_tonnes_total": round(masc_biomass_tonnes_total, 2),
+        "rows_in": len(df),
+    }])
+
+    if log_path.exists():
+        log_row.to_csv(log_path, mode="a", header=False, index=False)
+    else:
+        log_row.to_csv(log_path, mode="w", header=True, index=False)
+
+    print(f"Appended normalization summary to {log_path}")
 
 
 if __name__ == "__main__":

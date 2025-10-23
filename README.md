@@ -10,7 +10,8 @@ data/
 ├── reference/
 outputs/
 ├── rasters/<year>/
-└── mapping/<year>/
+├── mapping/<year>/
+└── reports/
 scripts/
 src/ag_res/
 logs/
@@ -77,8 +78,6 @@ File: `data/reference/crop_label_lut.csv`
 
 ## Pipeline Execution Order
 
-## Pipeline Execution Order
-
 The scripts below must be executed in this order to generate consistent ACI–MASC biomass outputs.
 Each stage builds on the outputs of the previous one.
 
@@ -92,7 +91,7 @@ Each stage builds on the outputs of the previous one.
    Cleans and imputes missing yield and acreage data from MASC Excel sources.
 
 4. **aci_reallocate_pixels.py**  
-   Aligns ACI acreages with MASC totals at the RM × crop level; removes false positives/negatives.
+   Aligns ACI acreages with MASC totals at the RM × crop level.
 
 5. **aci_muni_proportion.py**  
    Distributes reallocated RM-level acreages to individual municipalities using pixel share proportions.
@@ -101,10 +100,11 @@ Each stage builds on the outputs of the previous one.
    Identifies over- and under-represented crops, reallocating surplus acreage from donor crops (“Other crops,” “Pasture/forages”, "Canola/rapeseed).
 
 7. **aci_masc_merge.py**  
-   Combines ACI and MASC data into a single table containing acreage, yield, and proportional weights.
+   Combines ACI and MASC data into a single table containing acreage, yield, biomass, and proportional weights. If biomass RPR-SAF is every updated,
+   this script and any downstream must be re-run.
 
-8. **aci_yield_per_pixel.py**  
-   Converts acreage and yield data to per-pixel values; imputes missing yields and normalizes to MASC ground-truth totals.
+8. **aci_biomass_per_pixel.py**  
+   Converts acreage and yield data to calculated biomass per-pixel values; imputes missing yields/biomasses and normalizes to MASC ground-truth totals.
 
 9. **(Next phase)** – *biomass_from_yield.py* (planned)  
    Converts per-pixel yields to biomass using crop-specific Residue Production Factors (RPF) and Straw-to-Grain Ratios (SAF).
