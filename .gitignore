@@ -10,6 +10,7 @@ __pycache__/
 
 # Jupyter
 .ipynb_checkpoints/
+notebooks/
 
 # VS Code
 .vscode/
@@ -28,6 +29,7 @@ outputs/visuals/
 outputs/reports/reallocation/
 outputs/reports/muni_rm_pct_summaries/
 outputs/reports/aci_masc_merge/
+outputs/reports/raster_build/
 *.log
 
 # Environment and build

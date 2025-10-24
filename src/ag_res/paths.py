@@ -25,3 +25,6 @@ def logs() -> Path:
 
 def reports() -> Path:
     return project_root / "outputs" /  "reports"
+
+def outputs() -> Path:
+    return project_root / "outputs"

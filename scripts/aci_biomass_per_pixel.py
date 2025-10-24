@@ -94,6 +94,17 @@ def main():
     df["masc_biomass_tonnes_total"] = df.apply(impute_biomass, axis=1)
     df["aci_biomass_tonnes_per_pixel"] = df["masc_biomass_tonnes_total"] / df["aci_pixels"]
 
+    # Remove zero-acre records before normalization
+    zero_mask = (df["aci_acres"] == 0) & (df["masc_acres"] == 0)
+    removed = zero_mask.sum()
+    df = df.loc[~zero_mask].copy()
+
+    # Remove infinities and NaNs
+    df.replace([float("inf"), -float("inf")], 0, inplace=True)
+    df.fillna(0, inplace=True)
+
+    print(f"Removed {removed} zero-acre rows before normalization")
+
     # Normalize to ground truths
     masc_yield_tonnes_total = masc_summary_df.loc[
         masc_summary_df["year"] == year, "yield_tonnes"
