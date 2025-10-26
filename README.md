@@ -106,5 +106,5 @@ Each stage builds on the outputs of the previous one.
 8. **aci_biomass_per_pixel.py**  
    Converts acreage and yield data to calculated biomass per-pixel values; imputes missing yields/biomasses and normalizes to MASC ground-truth totals.
 
-9. **(Next phase)** – *biomass_from_yield.py* (planned)  
-   Converts per-pixel yields to biomass using crop-specific Residue Production Factors (RPF) and Straw-to-Grain Ratios (SAF).
+9. **raster_build.py**
+   Writes two raster geotiff files with bands being either code (corresponding to ACI Label) or biomass (tonnes/pixel).
