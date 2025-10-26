@@ -37,3 +37,7 @@ outputs/reports/raster_build/
 *.egg-info/
 build/
 dist/
+
+# Literature
+literature/txt/
+literature/rpr_sources/
