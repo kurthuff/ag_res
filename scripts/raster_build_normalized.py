@@ -1,4 +1,4 @@
-# scripts/aci_pixel_normalization.py
+# scripts/raster_build_normalized.py
 
 """
 Optional cartographic post-processing step.
@@ -125,7 +125,7 @@ def calculate_pixel_removal(problem_df, max_reduction_pct=50):
     return pd.DataFrame(results)
 
 
-def get_rm_mask(rm_name, muni_gdf, muni_rm_lut, transform, shape):
+def get_rm_mask(rm_name, muni_gdf, muni_rm_lut, raster_crs, transform, shape):
     """Create a boolean mask for a given RM"""
     from rasterio.features import rasterize
     
@@ -135,12 +135,15 @@ def get_rm_mask(rm_name, muni_gdf, muni_rm_lut, transform, shape):
     if len(muni_names) == 0:
         return np.zeros(shape, dtype=bool)
     
-    # Get geometries
-    rm_geoms = muni_gdf[muni_gdf['MUNI_NAME'].isin(muni_names)].geometry
+    # Get geometries and reproject to raster CRS
+    rm_geoms_gdf = muni_gdf[muni_gdf['MUNI_NAME'].isin(muni_names)].copy()
+    
+    if rm_geoms_gdf.crs != raster_crs:
+        rm_geoms_gdf = rm_geoms_gdf.to_crs(raster_crs)
     
     # Rasterize to mask
     mask = rasterize(
-        [(geom, 1) for geom in rm_geoms],
+        [(geom, 1) for geom in rm_geoms_gdf.geometry],
         out_shape=shape,
         transform=transform,
         fill=0,
@@ -284,12 +287,14 @@ def main():
         codes_profile = src.profile.copy()
         codes_transform = src.transform
         codes_shape = codes_array.shape
+        codes_crs = src.crs
     
     with rasterio.open(values_path) as src:
         values_array = src.read(1).copy()
         values_profile = src.profile.copy()
     
     print(f"  Raster shape: {codes_shape}")
+    print(f"  Raster CRS: {codes_crs}")
     print(f"  Initial non-zero pixels: {np.sum(codes_array > 0):,}")
     
     # Step 4: Apply corrections
@@ -309,7 +314,7 @@ def main():
         n_remove = int(row['pixels_to_remove'])
         
         # Get RM mask
-        rm_mask = get_rm_mask(rm, muni_gdf, muni_rm_lut, codes_transform, codes_shape)
+        rm_mask = get_rm_mask(rm, muni_gdf, muni_rm_lut, codes_crs, codes_transform, codes_shape)
         
         if not rm_mask.any():
             print(f"  Warning: Empty mask for {rm}, skipping")
@@ -369,13 +374,20 @@ def main():
     print("\n" + "=" * 70)
     print("NORMALIZATION COMPLETE")
     print("=" * 70)
-    print(f"Total pixels removed: {adj_df['pixels_removed'].sum():,}")
-    print(f"Average per-pixel improvement: {adj_df['new_per_pixel'].mean() - adj_df['old_per_pixel'].mean():.6f} tonnes")
-    print(f"RMs corrected: {adj_df['rm'].nunique()}")
-    print(f"Crops corrected: {adj_df['Label'].nunique()}")
-    print(f"\nMASC biomass totals preserved: {adj_df['masc_biomass_total'].sum():,.2f} tonnes")
-    print(f"\nNormalized rasters: {out_dir}")
-    print(f"Reports: {reports_dir}")
+    
+    if len(adj_df) == 0:
+        print("No adjustments were made.")
+        print("All RMs are within acceptable ranges or no major crops fell below threshold.")
+        print(f"\nNormalized rasters written (identical to base): {out_dir}")
+        print(f"Reports: {reports_dir}")
+    else:
+        print(f"Total pixels removed: {adj_df['pixels_removed'].sum():,}")
+        print(f"Average per-pixel improvement: {adj_df['new_per_pixel'].mean() - adj_df['old_per_pixel'].mean():.6f} tonnes")
+        print(f"RMs corrected: {adj_df['rm'].nunique()}")
+        print(f"Crops corrected: {adj_df['Label'].nunique()}")
+        print(f"\nMASC biomass involved in processing: {adj_df['masc_biomass_total'].sum():,.2f} tonnes")
+        print(f"\nNormalized rasters: {out_dir}")
+        print(f"Reports: {reports_dir}")
 
 
 if __name__ == "__main__":

@@ -108,3 +108,6 @@ Each stage builds on the outputs of the previous one.
 
 9. **raster_build.py**
    Writes two raster geotiff files with bands being either code (corresponding to ACI Label) or biomass (tonnes/pixel).
+
+10. **raster_build_normalized.py** (Optional)  
+   Reduces visual discontinuities at RM boundaries by randomly removing pixels from statistically over-classified RMs, bringing per-pixel biomass values to provincial median. Preserves exact MASC totals; outputs to `rasters/<year>/normalized/`.
