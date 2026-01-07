@@ -47,33 +47,40 @@ def load_data(year: int):
     return biomass_df, code_lut, muni_gdf, muni_rm_lut, raster_codes_path, raster_values_path
 
 
-def identify_low_tail_rms(biomass_df, min_pixels=10000, target_percentile=50):
+def identify_low_tail_rms(biomass_df, min_pixels, target_percentile):
     """
     Identify RMs with per-pixel biomass below target percentile for major crops.
-    These RMs have too many pixels (ACI over-classification).
+    Aggregates all municipalities within each RM FIRST to avoid duplicates.
     """
     results = []
     
     for label in biomass_df['Label'].unique():
         label_data = biomass_df[biomass_df['Label'] == label].copy()
         
+        # CRITICAL: Aggregate all MUNI_NAMEs within each RM FIRST
+        rm_data = label_data.groupby('rm').agg({
+            'aci_pixels': 'sum',
+            'gt_masc_biomass_tonnes_total': 'sum'
+        }).reset_index()
+        rm_data['Label'] = label
+        
         # Skip minor crops
-        total_pixels = label_data['aci_pixels'].sum()
+        total_pixels = rm_data['aci_pixels'].sum()
         if total_pixels < min_pixels:
             continue
         
-        # Calculate per-pixel biomass for each RM
-        label_data['biomass_per_pixel'] = (
-            label_data['gt_masc_biomass_tonnes_total'] / label_data['aci_pixels']
+        # Calculate per-pixel biomass for each RM (now properly aggregated)
+        rm_data['biomass_per_pixel'] = (
+            rm_data['gt_masc_biomass_tonnes_total'] / rm_data['aci_pixels']
         )
         
-        # Calculate target value (median or specified percentile)
-        target_value = label_data['biomass_per_pixel'].quantile(target_percentile / 100)
+        # Calculate target value
+        target_value = rm_data['biomass_per_pixel'].quantile(target_percentile / 100)
         
         # Identify RMs below target (low tail = over-classified)
-        low_tail = label_data[label_data['biomass_per_pixel'] < target_value].copy()
+        low_tail = rm_data[rm_data['biomass_per_pixel'] < target_value].copy()
         low_tail['target_per_pixel'] = target_value
-        low_tail['provincial_median'] = label_data['biomass_per_pixel'].median()
+        low_tail['provincial_median'] = rm_data['biomass_per_pixel'].median()
         low_tail['provincial_pixels'] = total_pixels
         
         results.append(low_tail)
@@ -88,7 +95,7 @@ def identify_low_tail_rms(biomass_df, min_pixels=10000, target_percentile=50):
                         'provincial_pixels']]
 
 
-def calculate_pixel_removal(problem_df, max_reduction_pct=50):
+def calculate_pixel_removal(problem_df, max_reduction_pct):
     """
     Calculate how many pixels to remove to bring per-pixel biomass to target.
     MASC biomass total stays constant; fewer pixels = higher per-pixel value.
@@ -206,11 +213,11 @@ def main():
     )
     parser.add_argument("--year", type=int, required=True,
                        help="Year of rasters to normalize")
-    parser.add_argument("--target-percentile", type=int, default=50,
-                       help="Target percentile for normalization (default: 50 = median)")
-    parser.add_argument("--min-pixels", type=int, default=10000,
+    parser.add_argument("--target-percentile", type=int, default=40,
+                       help="Target percentile for normalization (default: 50)")
+    parser.add_argument("--min-pixels", type=int, default=5000,
                        help="Minimum provincial pixels to consider a crop major (default: 10000)")
-    parser.add_argument("--max-reduction", type=float, default=50,
+    parser.add_argument("--max-reduction", type=float, default=30,
                        help="Maximum percentage of pixels to remove per RM×Label (default: 50)")
     parser.add_argument("--seed", type=int, default=2024,
                        help="Random seed for reproducibility (default: 2024)")
@@ -385,7 +392,7 @@ def main():
         print(f"Average per-pixel improvement: {adj_df['new_per_pixel'].mean() - adj_df['old_per_pixel'].mean():.6f} tonnes")
         print(f"RMs corrected: {adj_df['rm'].nunique()}")
         print(f"Crops corrected: {adj_df['Label'].nunique()}")
-        print(f"\nMASC biomass involved in processing: {adj_df['masc_biomass_total'].sum():,.2f} tonnes")
+        print(f"\nMASC biomass in adjusted RMs: {adj_df['masc_biomass_total'].sum():,.2f} tonnes (preserved exactly)")
         print(f"\nNormalized rasters: {out_dir}")
         print(f"Reports: {reports_dir}")
 

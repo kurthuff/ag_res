@@ -136,8 +136,8 @@ def process_by_municipality(src, dst_codes, dst_biomass,
         except Exception:
             continue
 
-        band1_chunk = src.read(1, window=window)
-        if band1_chunk.size == 0 or np.all(band1_chunk == 0):
+        band1_chunk = np.zeros((window.height, window.width), dtype="uint16")
+        if band1_chunk.size == 0:
             print(f"Skipping {muni_name}: no overlapping pixels")
             continue
 
